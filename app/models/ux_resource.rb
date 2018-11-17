@@ -1,0 +1,2 @@
+class UxResource < ApplicationRecord
+end
