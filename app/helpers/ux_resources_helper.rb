@@ -1,0 +1,2 @@
+module UxResourcesHelper
+end

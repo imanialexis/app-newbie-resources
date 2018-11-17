@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'ux_resources/index'
+  get 'ux_resources/show'
+  get 'ux_resources/edit'
+  get 'ux_resources/update'
+  get 'ux_resources/new'
+  get 'ux_resources/create'
+  get 'ux_resources/destroy'
   get 'design_resources/index'
   get 'design_resources/show'
   get 'design_resources/edit'
