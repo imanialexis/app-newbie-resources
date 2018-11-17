@@ -1,0 +1,2 @@
+module DesignResourcesHelper
+end

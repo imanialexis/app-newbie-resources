@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  get 'design_resources/index'
+  get 'design_resources/show'
+  get 'design_resources/edit'
+  get 'design_resources/update'
+  get 'design_resources/new'
+  get 'design_resources/create'
+  get 'design_resources/destroy'
   get 'slack_channels/index'
   get 'slack_channels/show'
   get 'slack_channels/edit'
