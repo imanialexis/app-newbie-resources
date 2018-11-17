@@ -30,6 +30,8 @@ ActiveRecord::Schema.define(version: 2018_11_17_202724) do
     t.string "cost"
     t.string "url"
     t.string "image"
+    t.string "soundcloud"
+    t.string "itunes"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
