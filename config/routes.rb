@@ -1,52 +1,12 @@
 Rails.application.routes.draw do
-  get 'ux_resources/index'
-  get 'ux_resources/show'
-  get 'ux_resources/edit'
-  get 'ux_resources/update'
-  get 'ux_resources/new'
-  get 'ux_resources/create'
-  get 'ux_resources/destroy'
-  get 'design_resources/index'
-  get 'design_resources/show'
-  get 'design_resources/edit'
-  get 'design_resources/update'
-  get 'design_resources/new'
-  get 'design_resources/create'
-  get 'design_resources/destroy'
-  get 'slack_channels/index'
-  get 'slack_channels/show'
-  get 'slack_channels/edit'
-  get 'slack_channels/update'
-  get 'slack_channels/new'
-  get 'slack_channels/create'
-  get 'slack_channels/destroy'
-  get 'newsletters/index'
-  get 'newsletters/show'
-  get 'newsletters/edit'
-  get 'newsletters/update'
-  get 'newsletters/new'
-  get 'newsletters/create'
-  get 'newsletters/destroy'
-  get 'youtube_channels/index'
-  get 'youtube_channels/show'
-  get 'youtube_channels/edit'
-  get 'youtube_channels/update'
-  get 'youtube_channels/new'
-  get 'youtube_channels/create'
-  get 'youtube_channels/destroy'
-  get 'websites/index'
-  get 'websites/show'
-  get 'websites/edit'
-  get 'websites/update'
-  get 'websites/new'
-  get 'websites/create'
-  get 'websites/destroy'
-  get 'podcasts/index'
-  get 'podcasts/show'
-  get 'podcasts/edit'
-  get 'podcasts/update'
-  get 'podcasts/new'
-  get 'podcasts/create'
-  get 'podcasts/destroy'
+  root to: 'podcasts#index'
+
+  resources :newsletters
+  resources :podcasts
+  resources :slack_channels
+  resources :ux_resources
+  resources :websites
+  resources :youtube_channels
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
